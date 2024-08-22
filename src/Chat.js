@@ -18,9 +18,8 @@ function Chat() {
     e.key === "Enter" && handleSubmit();
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e) => {    
     e.preventDefault();
-    console.log(text);
     if (text === "") return;
     setChat((historico) => [...historico, { user: "User", text: text }]);
     inputext.value = "";
