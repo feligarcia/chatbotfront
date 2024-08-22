@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import Chat from './Chat';
+import classes from "./App.module.css";
+import Chat from "./Chat";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      
-        <p>Chatbot con AI
-        </p>
+    <>
+      <div className={classes.App}>
+        <h2>Chatbot con Groq </h2>
+        <p>Front para chatear con bot en groq</p>
         <a
-          className="App-link"
+          className={classes.applink}
           href="https://github.com/feligarcia"
           target="_blank"
           rel="noopener noreferrer"
         >
-         Por JF Garcia
+          by Juan Felipe Garcia
         </a>
-      </header>
+      </div>
       <Chat />
-    </div>
+    </>
   );
 }
 
